@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="normalize.css">
+
+    <style type="text/css">
+        body{
+            color: #100829;
+            text-align: center;
+        }
+        .clearfix {
+            overflow: auto;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .page-wrap{
+            width: 960px;
+            height: 100%;
+            margin: 0 auto;
+        }
+        .page-wrap header {
+            background: #263eee;
+            padding: 20px;
+            text-align: center;
+        }
+        .page-wrap footer {
+            background: #eeec13;
+            padding: 20px;
+            text-align: center;
+        }
+        .page-wrap nav {
+            margin: 10px 0;
+            padding: 10px 20px;
+            background: #ee34b0;
+            text-align: center;
+        }
+
+        .page-wrap .content {
+            margin: 10px 0;
+        }
+
+        .content .aside-left {
+            width: 20%;
+            background: #ee5539;
+            float: left;
+            min-height: 500px;
+            box-sizing: border-box;
+        }
+
+        .content .aside-right {
+            width: 20%;
+            background: #ee5045;
+            float: right;
+            min-height: 500px;
+            box-sizing: border-box;
+        }
+        .content .main-content {
+            background: #72ee1d;
+            min-height: 500px;
+            width: 60%;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-wrap">
+    <header>
+        Header
+    </header>
+    <nav>
+        Navigation
+    </nav>
+    <div class="content clearfix">
+        <div class="aside-left">Sidebar left</div>
+
+        <div class="main-content">Main content</div>
+        <div class="aside-right">Sidebar right</div>
+
+    </div>
+    <footer>
+        Footer
+    </footer>
+</div>
+
+</body>
+</html>

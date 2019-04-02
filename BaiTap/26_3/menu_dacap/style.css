@@ -1,0 +1,10 @@
+ul li{
+    list-style: none;
+}
+.menu >li{
+    float: left;
+    margin-right: 5px;
+}
+.q1 {
+    display: none;
+}

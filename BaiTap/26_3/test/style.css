@@ -1,0 +1,53 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+    border: 1px solid green;
+}
+ul{
+    list-style: none;
+    /*background: #FFFF00;*/
+
+
+
+}
+
+.main-menu > li{
+
+
+    padding: 15px;
+    float: left;
+    background: #FFFF00;
+
+}
+.main-menu > li > a {
+    text-decoration: none;
+    font-size: 24px;
+
+
+}
+
+.main-menu >li:hover ul.sub_menu{
+    display: block;
+}
+.sub_menu{
+    position: absolute;
+    display: none;
+}
+.sub_menu  li{
+    padding: 10px;
+    background: #FFFF00;
+}
+.sub_menu  li  a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.sub_menu  li:hover ul.item-menu{
+    display: block;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>căn trái</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+
+        #target1,#target2,#target3{
+            background: #72ee1d;
+            color: #FF0000;
+            width: 50%;
+            position: absolute;
+        }
+        #target1{
+            top: 50px;
+            left: 0px;
+        }
+        #target2{
+            top: 150px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #target3{
+
+            top: 250px;
+            right: 0px;
+        }
+        #parent1,#parent2,#parent3{
+            width: 50%;
+            margin: 400px;
+            color: #FF0000;
+            background: #FFFF00;
+            position: relative;
+            height: 300px;
+        }
+        #child1 , #child2 , #child3 {
+            background: #77ff74;
+            padding: 30px;
+            width: 300px;
+            position: absolute;
+        }
+        #child1{
+            top: 0;
+            left: 0;
+        }
+        #child2{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        #child3{
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="target1">
+    Thẻ block nằm trực tiếp trong thẻ body căn trái
+</div>
+
+<div id="target2">
+    Thẻ block nằm trực tiếp trong thẻ body căn giữa
+</div>
+
+<div id="target3">
+    Thẻ block nằm trực tiếp trong thẻ body căn phải
+</div>
+
+<div id="parent1">
+    <div id="child1">
+        Thẻ block nằm trong 1 khối khác căn trái
+    </div>
+</div>
+
+<div id="parent2">
+    <div id="child2">
+        Thẻ block nằm trong 1 khối khác căn giữa theo chiều dọc và chiều ngang
+    </div>
+</div>
+
+<div id="parent3">
+    <div id="child3">
+        Thẻ block nằm trong 1 khối khác căn phải
+    </div>
+</div></div>
+</body>
+</html>
